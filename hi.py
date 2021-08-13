@@ -1,6 +1,5 @@
-b = list(map(int, input().split()))
-tmp = 0
-for i in b:
-    tmp += b.count(i) - 1
-print(tmp//2)
-
+studen = [{input() for j in range(int(input()))} for i in range(int(input()))]
+known_by_everyone = set.intersection(*studen)
+known_by_someone = set.union(*studen)
+print(len(known_by_everyone), *sorted(known_by_everyone), sep='\n')
+print(len(known_by_someone), *sorted(known_by_someone), sep='\n')
