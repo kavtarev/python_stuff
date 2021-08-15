@@ -2,9 +2,9 @@ from os import error
 
 
 try:
-    data = open('bs.txt', 'r')
-    for line in data.readlines():
-        print(line.strip())
+    data = open('bs1.txt', 'a')
+    data.write('new line2 \n')
+    
         
 except FileNotFoundError:
   print('non')
