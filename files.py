@@ -1,12 +1,7 @@
-from os import error
+import sys
+import pip
 
 
-try:
-    data = open('bs1.txt', 'a')
-    data.write('new line2 \n')
-    
-        
-except FileNotFoundError:
-  print('non')
-data.close()
+print(pip.__version__)
 #print('hi my name is',data.readable())
+
